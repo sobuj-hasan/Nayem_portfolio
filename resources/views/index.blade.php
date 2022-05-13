@@ -96,7 +96,7 @@
                     <!--Mobile Header-->
                     <div class="header-mobile">
                         <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                        <h2>Mohammad Khalid Shaifullah Nayem</h2>
+                        <h5>Mohammad Khalid Shaifullah Nayem</h5>
                     </div>
 
                     <!--Main Header-->
@@ -985,13 +985,13 @@ Services: <br>
                               </div>
 
                               <!--Form Start-->
-                              <form id="contact-form" method="post" action="{{ route('login') }}">
+                              <form method="post" action="{{ route('login') }}">
                                  @csrf
                                  <div class="row">
                                        <!--Email Field-->
                                        <div class="col-md-12 mb-50">
                                           <span class="input">
-                                             <input class="input__field cf-validate" type="text" id="cf-email" name="email" />
+                                             <input class="input__field" type="text" name="email" />
                                              @error('email')
                                                    <span class="text-warning fw-bolder">{{ $message }}</span>
                                              @enderror
@@ -1001,15 +1001,13 @@ Services: <br>
 
                                        <div class="col-md-12 mb-50">
                                           <span class="input">
-                                             <input class="input__field cf-validate" type="password" id="cf-email" name="password" />
+                                             <input class="input__field" type="password" name="password" />
                                              @error('password')
                                                    <span class="text-warning fw-bolder">{{ $message }}</span>
                                              @enderror
                                              <label class="input__label" for="cf-email">Password</label>
                                           </span>
                                        </div>
-
-                                       <div class="alert-container col-md-12"></div>
 
                                        <!--Submit Button-->
                                        <div class="col-md-12 text-center">
